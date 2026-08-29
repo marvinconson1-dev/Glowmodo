@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Header responsive override
+   Loads AFTER style.css and replaces the fixed 1920px absolute-position
+   rules with a normal responsive flex layout, while keeping the same look.
+   ========================================================================== */
+
+.header {
+  position: relative !important;
+  width: 100% !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+/* ---- Promo banner ---- */
+.header .banner {
+  position: relative;
+  flex-wrap: wrap;
+  padding: 14px 24px;
+}
+
+
+.header .text {
+  white-space: normal;
+}
+
+
+/* ---- Navigation bar ---- */
+.header .navigation-bar {
+}
+
+.header .logo {
+
+}
+
+.header .buttons-container {
+
+}
+
+.header .text-wrapper {
+
+}
+
+/* ---- Small screens: stack nav vertically ---- */
+@media (max-width: 900px) {
+  .header .navigation-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .buttons-container {
+    order: 3;
+    width: 100%;
+  }
+
+  .header .text-wrapper {
+    align-self: flex-start;
+  }
+
+  .header .banner {
+    padding: 12px 16px;
+  }
+
+  .header .text {
+    font-size: 15px;
+  }
+}

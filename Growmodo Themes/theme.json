@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "grey-08", "color": "#REPLACE_ME", "name": "Grey 08" },
+        { "slug": "grey-10", "color": "#REPLACE_ME", "name": "Grey 10" },
+        { "slug": "grey-15", "color": "#REPLACE_ME", "name": "Grey 15" },
+        { "slug": "grey-60", "color": "#REPLACE_ME", "name": "Grey 60" },
+        { "slug": "purple-60", "color": "#REPLACE_ME", "name": "Purple 60" },
+        { "slug": "purple-75", "color": "#REPLACE_ME", "name": "Purple 75" },
+        { "slug": "absolutewhite", "color": "#ffffff", "name": "White" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "slug": "urbanist",
+          "fontFamily": "\"Urbanist\", Helvetica, sans-serif",
+          "name": "Urbanist"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "1596px",
+      "wideSize": "1920px"
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
+}
